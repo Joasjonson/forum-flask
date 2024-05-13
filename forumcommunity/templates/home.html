@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="jumbotron text-center">
+                <h1 class="display-4">Welcome to the Dev Community!</h1>
+                <p class="lead">Whether you're a curious beginner or a seasoned pro, this community is the place to connect, learn, and collaborate with other devs.</p>
+                <hr class="my-4">
+                <p>Feel free, ask your questions, share knowledge and experiences. Create your account if you are not already registered.</p>
+                <a href="{{ url_for('forum')}}">
+                    <h4>Forum</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"> Miscellaneous Topics </h5>
+                        <p class="card-text">From programming languages to development methodologies, our forum covers a wide range of topics to suit all interests and skill levels.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"> Connected Community </h5>
+                        <p class="card-text">Members are always ready to share knowledge, offer support and exchange ideas, creating a collaborative and enriching learning atmosphere.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Collaboration and Learning</h5>
+                        <p class="card-text">Community where developers can come together to collaborate, learn and grow together. Opportunities to contribute, participate and share your knowledge with other members.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer mt-5">
+    <div class="container text-center">
+        <span class="text-muted">© 2024 Dev Community</span>
+    </div>
+</footer>
+
+{% endblock %}
